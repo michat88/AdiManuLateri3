@@ -1,0 +1,11 @@
+{
+    "name": "AdiManuLateri3",
+    "author": "adimanu",
+    "shortcode": "adimanu",
+    "iconUrl": "https://raw.githubusercontent.com/michat88/Zaneta/refs/heads/main/Icons/RepoIcon.png",
+    "description": "Nonton Sampe Biji Mata Kaluar",
+    "manifestVersion": 1,
+    "pluginLists": [
+      "https://raw.githubusercontent.com/michat88/AdiManuLateri3/refs/heads/builds/plugins.json"
+    ]
+}
