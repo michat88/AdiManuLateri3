@@ -1,0 +1,80 @@
+name: Build
+
+concurrency:
+  group: "build"
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths-ignore:
+      - '*.md'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          path: "src"
+
+      - name: Setup JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: 17
+          distribution: adopt
+          cache: gradle
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Create local.properties
+        run: |
+          cd $GITHUB_WORKSPACE/src
+          touch local.properties
+
+      - name: Build Plugins and Generate Repo Info
+        run: |
+          cd $GITHUB_WORKSPACE/src
+          chmod +x gradlew
+          ./gradlew make makePluginsJson
+          ./gradlew ensureJarCompatibility
+          
+          # Buat folder output
+          mkdir -p $GITHUB_WORKSPACE/output_builds
+          
+          # Copy plugin dan plugins.json
+          cp **/build/*.cs3 $GITHUB_WORKSPACE/output_builds/ || true
+          cp **/build/*.jar $GITHUB_WORKSPACE/output_builds/ || true
+          cp build/plugins.json $GITHUB_WORKSPACE/output_builds/ || true
+
+          # MEMBUAT FILE repo.json SECARA OTOMATIS
+          # Perubahan: Mengganti PremiumRepo menjadi AdiManuLateri3
+          cat <<EOF > $GITHUB_WORKSPACE/output_builds/repo.json
+          {
+              "name": "Michat88 Repo",
+              "iconUrl": "https://github.com/michat88.png",
+              "description": "Repository Plugin Michat88",
+              "manifestVersion": 1,
+              "pluginLists": [
+                "https://raw.githubusercontent.com/michat88/AdiManuLateri3/builds/plugins.json"
+              ]
+          }
+          EOF
+
+      - name: Push to builds branch
+        run: |
+          cd $GITHUB_WORKSPACE/output_builds
+          git init
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git checkout -b builds
+          git add .
+          git commit -m "Build update: $GITHUB_SHA"
+          git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git builds
