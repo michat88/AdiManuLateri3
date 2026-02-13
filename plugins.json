@@ -1,7 +1,7 @@
 [
     {
         "iconUrl": "https://raw.githubusercontent.com/michat88/Zaneta/aa97004f4d1d74ed69245e56da2c6ad3293b6106/Icons/Adi.png",
-        "apiVersion": 1,
+        "apiVersion": 4,
         "repositoryUrl": "https://github.com/michat88/AdiManuLateri3",
         "fileSize": 3128,
         "status": 1,
@@ -14,7 +14,7 @@
             "TvSeries",
             "Movie"
         ],
-        "version": 182,
+        "version": 20250214,
         "internalName": "Adicinemax21",
         "url": "https://raw.githubusercontent.com/michat88/AdiManuLateri3/builds/Adicinemax21.cs3",
         "name": "Adicinemax21"
