@@ -1,0 +1,9 @@
+{
+    "name": "AdiManuLateri3",
+    "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/RepoIcon.png",
+    "description": "Phisher Repository",
+    "manifestVersion": 1,
+    "pluginLists": [
+      "https://raw.githubusercontent.com/michat88/AdiManuLateri3/refs/heads/builds/plugins.json"
+    ]
+}
