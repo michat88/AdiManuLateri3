@@ -58,7 +58,7 @@ jobs:
           # Perubahan: Mengganti PremiumRepo menjadi AdiManuLateri3
           cat <<EOF > $GITHUB_WORKSPACE/output_builds/repo.json
           {
-              "name": "Michat88 Repo",
+              "name": "AdiManuLateri3",
               "iconUrl": "https://github.com/michat88.png",
               "description": "Repository Plugin Michat88",
               "manifestVersion": 1,
