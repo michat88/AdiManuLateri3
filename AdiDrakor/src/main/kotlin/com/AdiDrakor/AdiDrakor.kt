@@ -3,6 +3,7 @@ package com.AdiDrakor
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.metaproviders.TmdbProvider
 import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.cloudstream3.SubtitleFile
 
 class AdiDrakor : TmdbProvider() {
     // --- Identitas Provider ---
@@ -17,8 +18,8 @@ class AdiDrakor : TmdbProvider() {
         "data" to "Update Required"
     )
 
-    // --- PESAN KILL SWITCH ---
-    private val killSwitchMessage = "⚠️ REPO INI SUDAH MATI. SILAHKAN DOWNLOAD & UPDATE APLIKASI ADIXTREAM KE VERSI TERBARU UNTUK LANJUT MENONTON! ⚠️"
+    // --- PESAN KILL SWITCH (DIPERBARUI) ---
+    private val killSwitchMessage = "⚠️ REPO INI SUDAH MATI. SILAHKAN DOWNLOAD & UPDATE APLIKASI ADIXTREAM KE VERSI TERBARU UNTUK LANJUT MENONTON! Pastikan anda mendownload dari link resmi https://github.com/michat88/AdiXtream ⚠️"
 
     // --- FUNGSI PEMBLOKIRAN ---
 
