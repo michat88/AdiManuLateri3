@@ -1,0 +1,82 @@
+[
+    {
+        "iconUrl": "https://raw.githubusercontent.com/michat88/Zaneta/aa97004f4d1d74ed69245e56da2c6ad3293b6106/Icons/Adi.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/michat88/AdiManuLateri3",
+        "fileSize": 3192,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "aldry84"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 182,
+        "internalName": "Adicinemax21",
+        "url": "https://raw.githubusercontent.com/michat88/AdiManuLateri3/builds/Adicinemax21.cs3",
+        "name": "Adicinemax21"
+    },
+    {
+        "iconUrl": "https://klikxxi.me/wp-content/uploads/2024/02/cropped-site-icon.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/michat88/AdiManuLateri3",
+        "fileSize": 3186,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "aldry84"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 6,
+        "internalName": "AdiDrakor",
+        "url": "https://raw.githubusercontent.com/michat88/AdiManuLateri3/builds/AdiDrakor.cs3",
+        "name": "AdiDrakor"
+    },
+    {
+        "iconUrl": "https://klikxxi.me/wp-content/uploads/2024/02/cropped-site-icon.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/michat88/AdiManuLateri3",
+        "fileSize": 3188,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "aldry84"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 6,
+        "internalName": "Adimoviebox",
+        "url": "https://raw.githubusercontent.com/michat88/AdiManuLateri3/builds/Adimoviebox.cs3",
+        "name": "Adimoviebox"
+    },
+    {
+        "iconUrl": "https://klikxxi.me/wp-content/uploads/2024/02/cropped-site-icon.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/michat88/AdiManuLateri3",
+        "fileSize": 39589,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "aldry84"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 6,
+        "internalName": "LayarKacaProvider",
+        "url": "https://raw.githubusercontent.com/michat88/AdiManuLateri3/builds/LayarKacaProvider.cs3",
+        "name": "LayarKacaProvider"
+    }
+]
