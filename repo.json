@@ -1,9 +1,0 @@
-{
-    "name": "AdiManuLateri3",
-    "iconUrl": "https://github.com/michat88.png",
-    "description": "Repository Plugin Michat88",
-    "manifestVersion": 1,
-    "pluginLists": [
-      "https://raw.githubusercontent.com/michat88/AdiManuLateri3/builds/plugins.json"
-    ]
-}
